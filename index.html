@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Main Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='newstyle.css'>
+    <link rel="icon" href="assets/maplogos/sitelogo.ico">
+    <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+
+    <script>
+        var guiaudio = new Audio('assets/snd/buttonrollover.wav');
+        guiaudio.volume = 0.25;
+
+        var clickaudio = new Audio('assets/snd/buttonclickrelease.wav');
+        clickaudio.volume = 0.25;
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function clearPopups() {
+
+            document.getElementById("popup1").style.display = "none";
+            document.getElementById("popup3").style.display = "none";
+            document.getElementById("popup4").style.display = "none";
+            document.getElementById("popup5").style.display = "none";
+            clickaudio.play();
+
+        }
+
+        function randomBg() {
+
+            // bgarray = ["marsh.webm", "qalea.webm", "recovery.webm", "works.webm", "ranger.webm", "delivery.webm", "graduation.webm"];
+            bgarray = ["marsh.webm", "recovery.webm", "delivery2.webm", "rng.webm"];
+
+            document.getElementById("myVideo").src = "assets/mmbg/"+bgarray[getRandomInt(bgarray.length)];
+
+
+        }
+
+        function showPopup(id) {
+
+            id = "popup"+id;
+
+            if (document.getElementById(id).style.display == "flex") {
+
+                clearPopups();
+
+            }
+            else {
+
+                clearPopups();
+                document.getElementById(id).style.display = "flex";
+
+            }
+        }
+
+        function motdRandomizer() {
+
+            let motdlist = ['Why are you here?', 'OMG hii ^^ hi hiii hi :3', '-EPISODE THREE-', 'Welcome to city 17',
+            'You should drink water, NOW', 'aw hell naw', '-EPISODE TWO-', '-EPISODE ONE-', 'RETURN TO RAVENHOLM',
+            'those tt goons are up to sth', 'now using source 2', 'achieved with sorse', ':3', '', 'stop using twitter',
+            'Linux >>'
+
+
+
+
+
+            ];
+            document.getElementById("motd").innerHTML = motdlist[getRandomInt(motdlist.length)];
+
+        }
+
+        function playsound() {
+
+            guiaudio.play();
+
+        }
+
+
+
+    </script>
+</head>
+
+<body onload="motdRandomizer(), randomBg()">
+
+    <video autoplay muted loop id="myVideo">
+        <source id="videosrc" src="mmbg/marsh.webm" type="video/webm">
+    </video>
+
+    <div id="mmcontainer">
+        <div id="mmlogo"><p class="noselect fadeanim">tomo2515's PORTFOLIO</p></div>
+        <div id="mmmotd"><p class="noselect fadeanim" id="motd">-EPISODE THREE-</p></div>
+
+        <div id="mmbuttons" class="fadeanim">
+            <p class="noselect button" id="1" onclick="showPopup(this.id)" onmouseover="playsound()">MY MAPS</p>
+            <p class="noselect button" id="3" onclick="showPopup(this.id)" onmouseover="playsound()">MY MUSIC</p>
+            <p class="noselect button" id="6" style="color: #aaaaaa;">PROJECTS</p>
+            <p class="noselect button" id="2" style="color: #aaaaaa;">???</p>
+            <p class="noselect button" id="4" onclick="showPopup(this.id)" onmouseover="playsound()">ABOUT ME</p>
+            <p class="noselect button" id="5" onclick="showPopup(this.id)" onmouseover="playsound()">CONTACT</p>
+
+        </div>
+
+
+    </div>
+
+    <div id="popupcontainer">
+        <div id="popup1">
+            <div class="poptop">
+                <a class="noselect">MY MAPS</p>
+                <div class="windowspacer" style="align-self: flex-end;"></div>
+            </div>
+            <div id="popup1content">
+                <!-- <div class="mapexample"><a href="mapsites/horizon.html"><div class="mapscreen" style="background-image: url('assets/mapicons/badlandsicon.jpg');"></div></a></div> -->
+                <!-- <div class="mapexample"><a href="mapsites/vice.html"><div class="mapscreen" style="background-image: url('assets/mapicons/viceicon.jpg');"></div></a></div> -->
+                <div class="mapexample"><a href="mapsites/qalea.html"><div class="mapscreen" style="background-image: url('assets/mapicons/badlandsicon.jpg');"></div></a></div>
+                <div class="mapexample"><a href="mapsites/delivery.html"><div class="mapscreen" style="background-image: url('assets/mapicons/deliveryicon.jpg');"></div></a></div>
+                <div class="mapexample"><a href="mapsites/graduation.html"><div class="mapscreen" style="background-image: url('assets/mapicons/gradicon.jpg');"></div></a></div>
+                <div class="mapexample"><a href="mapsites/recovery.html"><div class="mapscreen" style="background-image: url('assets/mapicons/rcvicon.jpg');"></div></a></div>
+                <div class="mapexample"><a href="mapsites/works.html"><div class="mapscreen" style="background-image: url('assets/mapicons/wrksicon.jpg');"></div></a></div>
+                <div class="mapexample"><a href="mapsites/ranger.html"><div class="mapscreen" style="background-image: url('assets/mapicons/rngricon.jpg');"></div></a></div>
+                <div class="mapexample"><a href="mapsites/isle.html"><div class="mapscreen" style="background-image: url('assets/mapicons/isleicon.jpg');"></div></a></div>
+            </div>
+            <div class="popbot">
+                <div class="windowspacer" style="align-self: flex-start;"></div>
+
+                <div id="popbot1buttons" style="align-self: flex-end;">
+                    <div class="popbot1but" onclick='location.href="https://steamcommunity.com/id/100930902/myworkshopfiles/";'><a class="noselect">Workshop Page</a></div> <div class="popbot1but" onclick="location.href='cutcontent.html';" style="margin-left: 1vw; box-sizing: border-box; width: 7vw;"><a class="noselect">Cut Content</a></div>
+                    <div style="width: 72%;"></div>
+                    <div class="popbot1but" style="width: 6%;" onclick="clearPopups()" onclick=""><a class="noselect">Exit</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup3">
+            <div class="poptop" style="height: 2.1vw;">
+                <a class="noselect">MY MUSIC</p>
+                <div class="windowspacer" style="width: 23vw;"></div>
+            </div>
+            <div id="popup3content" style="text-align: left;">
+
+                    <!-- <div class="abg" id="al1" onclick="location.href = '#al1'" style="background-image: url(assets/acovers/cvr4.png);">
+                        <div class="albumexample">
+                            <div class="albumcover" style="background-image: url(assets/acovers/cvr4.png);"></div>
+
+                            <p style="margin: 0.4vw 0 0.4vw  0">THIS IS MY SUICIDE NOTE</p>
+                            <div class="buttoncontainer">
+                                
+                                <div class="albumbutton" style="background-image: url(assets/icons/yt.png);" onmouseover="this.style.cursor = 'pointer';"></div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="abg" id="al2" onclick="location.href = '#al2'" style="background-image: url(assets/acovers/moonr2.png);">
+                        <div class="albumexample">
+                            <div class="albumcover" style="background-image: url(assets/acovers/moonr2.png);"></div>
+
+                            <p style="margin: 0.4vw 0 0.4vw  0">MOON RIVER</p>
+                            <div class="buttoncontainer">
+                                <div class="albumbutton" style="background-image: url(assets/icons/spoti.png);" onmouseover="this.style.cursor = 'pointer';" onclick="location.href = 'http://www.google.com'; this.style.cursor = 'pointer'; "></div>
+                                <div class="albumbutton" style="background-image: url(assets/icons/yt.png);" onmouseover="this.style.cursor = 'pointer';" onclick="location.href = 'https://www.youtube.com/playlist?list=PL3Dfr1O4X7_IIHLMmQVx4QkLlNoTM-nQB';"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="abg" id="al3" onclick="location.href = '#al3'" style="background-image: url(assets/acovers/cvr.png);">
+                        <div class="albumexample">
+                            <div class="albumcover" style="background-image: url(assets/acovers/cvr.png);"></div>
+
+                            <p style="margin: 0.4vw 0 0.4vw  0">BADLANDS</p>
+                            <div class="buttoncontainer">
+                                <!-- <div class="albumbutton" style="background-image: url(assets/icons/spoti.png);" onclick="location.href = 'http://www.google.com';"></div> -->
+                                <div class="albumbutton" style="background-image: url(assets/icons/yt.png);" onmouseover="this.style.cursor = 'pointer';" onclick="location.href = 'https://www.youtube.com/playlist?list=PL3Dfr1O4X7_I5u6hQ9uZYnXqrb6q5ksRA';"></div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="popbot" style="height: 3vw;">
+                <div class="windowspacer" style="align-self: flex-end; width: 23vw;"></div>
+
+                <div id="popbot1buttons" style="align-self: flex-end; margin-top: 0.1vw;">
+                    <div style="width: 21vw;"></div>
+                    <div class="popbot1but" style="width: 8%;" onclick="clearPopups()" onclick=""><a class="noselect">Exit</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup4">
+            <div class="poptop" style="height: 1.2vw;">
+                <a class="noselect">ABOUT ME</p>
+            </div>
+            <div id="popup5content" style="text-align: left;">
+                <div class="windowspacer" style="width: 32vw;"></div>
+
+                <p style="margin-top: 1vw; margin-bottom: 0.7vw; font-size: 1.3vw;">Hi! I'm tomo2515x</p>
+                I'm an aspiring level designer, environment artist, programmer, <br>
+                web dev and a mediocre "musician" <br>
+                &nbsp;<br>
+                I mainly create source engine maps but I have some experience <br> in other engines/3d software like blender or unreal 5! <br>
+                I'm also very into web design and web dev overall, <br>
+                this entire site was made by me from scratch!<br>
+                &nbsp;<br>
+                &nbsp;<br>
+                If you're interested in working with me <br>
+                you can find all the contact info in "CONTACT"!
+
+            </div>
+            <div class="popbot" style="height: 3vw;">
+                <div class="windowspacer" style="align-self: flex-end; width: 32vw;"></div>
+
+                <div id="popbot1buttons" style="align-self: flex-end; margin-top: 0.1vw;">
+                    <div style="width: 30vw;"></div>
+                    <div class="popbot1but" style="width: 8%;" onclick="clearPopups()" onclick=""><a class="noselect">Exit</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup5">
+            <div class="poptop" style="height: 1.2vw;">
+                <a class="noselect">CONTACT</p>
+                <!-- <div class="windowspacer" style="align-self: flex-end; width: 22vw; height: 0.13vw;" ></div> -->
+            </div>
+            <div id="popup5content">
+                <div class="windowspacer" style="width: 22vw;"></div>
+
+                <div class="discordlink" style="width: 100%; height: 2vw;">
+
+                    <a class="noselect" style="font-size: 0.75vw; letter-spacing: 0.05vw;">DISCORD</a> <br>
+                    <a href="https://discord.com/invite/qM3mUyMm" target="_blank" class="contactlink" onmouseover="playsound()">tomo2515#4598</a>
+
+                </div>
+
+                <div class="discordlink" style="width: 100%; height: 2vw;">
+
+                    <a class="noselect" style="font-size: 0.75vw; letter-spacing: 0.05vw;">STEAM</a> <br>
+                    <a href="https://steamcommunity.com/id/100930902" target="_blank" class="contactlink" onmouseover="playsound()">tomo2515x</a>
+
+                </div>
+
+                <div class="discordlink" style="width: 100%; height: 2vw;">
+
+                    <a class="noselect" style="font-size: 0.75vw; letter-spacing: 0.05vw;">E-MAIL</a> <br>
+                    <a href="mailto:tomo2515pl@gmail.com" class="contactlink" onmouseover="playsound()">tomo2515pl@gmail.com</a>
+
+                </div>
+
+                <div class="discordlink" style="width: 100%; height: 2vw;">
+
+                    <a class="noselect" style="font-size: 0.75vw; letter-spacing: 0.05vw;">TWITTER</a> <br>
+                    <a href="https://twitter.com/tomo2515pl" target="_blank" class="contactlink" onmouseover="playsound()">@tomo2515pl</a>
+
+                </div>
+
+            </div>
+            <div class="popbot" style="height: 3vw;">
+                <div class="windowspacer" style="align-self: flex-end; width: 22vw;"></div>
+
+                <div id="popbot1buttons" style="align-self: flex-end; margin-top: 0.1vw;">
+                    <div style="width: 20vw;"></div>
+                    <div class="popbot1but" style="width: 8%;" onclick="clearPopups()" onclick=""><a class="noselect">Exit</a></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

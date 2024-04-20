@@ -1,0 +1,475 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+
+    transition: background-image 0.2s ease-in-out;
+
+}
+
+* {
+
+    scrollbar-color: #FFBA77 #6A6F73;
+    scrollbar-width: thin;
+
+}
+
+#menubar {
+
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    justify-content: left;
+    background-color: #000000bb;
+    backdrop-filter: blur(0.6vw);
+    position: fixed;
+
+    top: 0;
+    transition: 0.3s;
+
+    z-index: 4;
+
+    box-shadow: 0 0.2vw 20px #000000aa;
+
+}
+
+#menulogo {
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    background-image: url("maplogos/sitelogo.png");
+    
+}
+
+#menudivider {
+
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    
+}
+    
+.menuel1{
+    /* font-size: 1.1vw;
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    height: 100%; */
+    width: 100%;
+    height: 70%;
+    /* background-color: violet; */
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    
+}
+
+#menubar a:hover {
+
+    background-color: #6A6F73;
+
+}
+
+#menubar a {
+    font-size: 0.7vw;
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+
+}
+
+#mapimgtransparent {
+    width: 100%;
+    height: 100vh;
+    clear: both;
+    z-index: 3;
+    display: flex;
+
+    background-color: rgba(0,0,0, 0);
+
+}
+
+#mapimglogo {
+    width: 100%;
+    height: 11vw;
+    z-index: 3;
+    align-self: flex-end;
+
+    text-align: right;
+    background-color: rgba(0,0,0,0.6);
+
+    
+
+}
+
+#maplogoimg {
+
+    width: 40%;
+    height: 100%;
+
+}
+
+#mapimglogo img {
+
+    height: 100%;
+
+}
+
+#desc1 {
+
+    width: 100%;
+    max-height: 100%;
+
+    background-color: #00000010;
+    backdrop-filter: blur(0.5vw);
+    display: flex;
+    
+    flex-direction: column;
+  
+}
+
+#desccontent {
+    font-size: 1.2vw;
+    
+    display: flex;
+    align-content: flex-start;
+    background-image: linear-gradient(#212c3b, #6A6F73cc);
+    /* background-image: linear-gradient(#171A21, #212c3b); */
+    width: 100%;
+    height: 100%;
+    margin-top: 2vw;
+    
+
+    box-shadow: 0.2vw 0vh 2vw #00000033, -0.2vw 0vh 2vw #00000033;
+    
+}
+
+#desctext {
+
+    /* margin-top: 2vw; */
+
+    box-sizing: border-box;
+    /* padding: 0 2% 0 2%; */
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+    background-color: rgba(0,0,0,0.7);
+
+    padding: 6vw;
+
+}
+
+#footer {
+    
+    width: 100%;
+    height: 2vw;
+    text-align: center;
+    font-size: 0.6vw;
+}
+
+#gallery {
+
+    /* background-color: #3E3F40; */
+    /* background-color: #464a4d; */
+    
+    height: 30%;
+    width: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+#steam1 {
+
+    width: 30%;
+    height: 100%;
+    background-color: #212c3baa;
+    /* background-image: linear-gradient(#171A21, #1b1f27); */
+    /* background-image: url('steam1_only.png'); */
+    /* background-size:contain; */
+    /* background-repeat: no-repeat; */
+
+}
+
+.sidebutton {
+
+    width: 100%;
+    height: 4vw;
+    /* background-color: #FFBA77; */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: 0.1s;
+
+    box-sizing: border-box;
+    margin-top: 0.2vw;
+
+}
+
+#steamlink {
+
+    height: 16vw;
+    background-color: #212c3b;
+
+}
+
+.sidebutton:hover {
+    box-sizing: border-box;
+    
+    border-style: solid;
+    border-width: 0.15vw;
+    border-color: #ffffffff;
+
+}
+
+#description {
+
+    margin: 0;
+    margin-bottom: 2%;
+    padding: 0;
+    font-size: 100%;
+    /* background-color: #3E3F40; */
+    /* background-color: #1e252b;  */
+    text-align: center;
+    letter-spacing: 4px;
+    display: none;
+    color: white;
+    box-sizing: border-box
+}
+
+#gallery ul {
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#gallery li {
+    list-style: none;
+    height: 7vw;
+    
+
+}
+
+#gallery img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+  }
+
+/* #gallery li:last-child {
+    flex-grow: 10;
+} */
+
+#gallery img:hover {
+
+    
+    transform: scale(1.05);
+
+}
+
+#screenshot { 
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 6;
+
+    display: none;
+    position: fixed;
+    padding: 2%;
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 100vh;
+
+    background-color: #080808c0;
+    backdrop-filter: blur(4px);
+
+}
+.spacer {
+    margin-bottom: 2vw;
+    background-color: #ff00aa;
+    margin-top: 2vw;
+    width: 100%;
+    height: 0.2vw;
+
+    border-radius: 1vw;
+
+} 
+
+.sidespacer {
+
+    width: 100%;
+    height: 3vw;
+    /* background-color: aqua; */
+
+}
+
+.screenshotbuttons {
+
+    width: 2%;
+    height: 100%;
+    background-color: #ff000099;
+    
+    display: flex;
+    justify-content: center;
+
+    font-size: 0.7vw;
+
+    backdrop-filter: blur(2px);
+
+    transition: 0.3s;
+
+}
+
+.screenshotbuttons:hover {
+
+    background-color: #ff555599;
+
+}
+
+.screenshotbuttons1 {
+
+    background-color: #00ff0099;
+
+}
+
+.screenshotbuttons1:hover {
+
+    background-color: #94ff9499;
+
+}
+
+#screenshotimg {
+    /* background-color: cadetblue; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('20220630082604_1.jpg');
+    width: 80%;
+    height: 44vw;
+
+}
+
+#screenshotbar {
+
+    width: 100%;
+    height: 1vw;
+    background-color: #00000088;
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    gap: 0.2vw;
+
+}
+
+#welcometext {
+
+    font-size: 1.5vw;
+    text-align: center;
+    
+    padding: 2%;
+
+    width: 100%;
+    height: 22vw;
+    box-sizing: border-box;
+
+
+    background-image: linear-gradient(rgba(0,0,0.1), rgba(0,0,0,0.7));
+}
+
+#welcometext a p {
+
+    margin-top: 8vw;
+    font-size: 2.5vw;
+}
+
+.mapname {
+
+    width: 100%;
+    height: 2.5vw;
+    background-image: url("mapsites/mapbg/de_ranger_r098.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+    
+    /* background-size: cover; */
+
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+
+}
+
+.mapname .backdropblur {
+
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    box-sizing: border-box;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    text-shadow: 0.1vw 0.1vw #000000;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #00000011;
+    backdrop-filter: blur(8px);
+
+}
+
+.sect {
+
+    width: 40%;
+    height: 1.7vw;
+    background-image: linear-gradient(90deg,#FFBA77aa, #00000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: 0.4vw;
+    box-sizing: border-box;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+
+}
+

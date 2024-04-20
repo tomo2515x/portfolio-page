@@ -1,0 +1,364 @@
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+   
+}
+
+.parallax-bg {
+
+    width: 100vw;
+    height: 125vh;
+    
+    position: fixed;
+    background-size: cover;
+    background-position: 50%;
+    transform: translate(0%, 0%);
+    z-index: -10;
+
+
+}
+
+* {
+
+    scrollbar-color: #FFBA77 #6A6F73;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    
+
+}
+
+#menubar {
+
+    width: 100%;
+    /* height: clamp(1.5rem, 2vmax, 2vw); */
+    height: 2vmax;
+    display: flex;
+    justify-content: left;
+    background-color: #000000bb;
+    backdrop-filter: blur(0.6vw);
+    position: fixed;
+
+    top: 0;
+    transition: 0.3s;
+
+    z-index: 4;
+
+    box-shadow: 0 0.2vw 20px #000000aa;
+
+}
+
+#menulogo {
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    background-image: url("maplogos/sitelogo.png");
+    
+}
+
+#menudivider {
+
+    width: 60%;
+    height: 100%;
+    
+}
+    
+.menuel1{
+
+    width: 100%;
+    height: 70%;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    
+}
+
+#menubar a:hover {
+
+    background-color: #6A6F73;
+
+}
+
+#menubar a {
+    font-size: 0.7vmax;
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    transition: 0.3s;
+
+}
+
+#mapimgtransparent {
+    width: 100%;
+    height: 100vh;
+    clear: both;
+    z-index: 3;
+    display: flex;
+
+    
+
+    background-color: rgba(0,0,0, 0);
+
+}
+
+#mapimglogo {
+    width: 100%;
+    height: 11vw;
+    z-index: 3;
+    align-self: flex-end;
+
+    text-align: right;
+    background-color: rgba(0,0,0,0.6);
+
+    
+
+}
+
+#maplogoimg {
+
+    width: 40%;
+    height: 100%;
+
+}
+
+#mapimglogo img {
+
+    height: 100%;
+
+}
+
+#desc1 {
+
+    width: 100%;
+    height: 50vw;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+    display: flex;
+    
+    justify-content: center;
+
+}
+
+#desccontent {
+    font-size: 1.2vw;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    backdrop-filter: blur(1.5vw);
+    background-color: #212c3b66;
+    width: 70%;
+    height: 100%;
+
+    
+
+    box-shadow: 0.2vw 0vh 2vw #00000033, -0.2vw 0vh 2vw #00000033;
+    
+}
+
+#desctext {
+
+    box-sizing: border-box;
+    padding: 1.5% 2% 2% 2%;
+    width: 72.5%;
+    height: 100%;
+
+}
+
+#footer {
+    margin-top: 4vw;
+    width: 100%;
+    height: 1vw;
+    text-align: center;
+    font-size: 0.6vw;
+}
+
+#gallery {
+    
+    height: 55%;
+    width: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+#steam1 {
+
+    width: 27.5%;
+    height: 100%;
+    background-color: #212c3b88;
+
+}
+
+.sidebutton {
+
+    width: 100%;
+    height: 4vw;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-sizing: border-box;
+    margin-top: 0.2vw;
+
+    background-position: center;
+
+    transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+
+}
+
+#steamlink {
+
+    height: 16vw;
+    background-color: #212c3b;
+    margin-bottom: 3vw;
+
+}
+
+#steamlink:hover {
+    transform-origin: top;
+    transform: scale(1.02);
+
+}
+
+
+.sidebutton:hover {
+
+    transform: scale(1.05);
+
+}
+
+#description {
+
+    margin: 0;
+    margin-bottom: 2%;
+    padding: 0;
+    font-size: 50%;
+    font-weight: bold;
+
+    
+    
+    display: block;
+    color: white;
+    box-sizing: border-box
+}
+
+#gallery ul {
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#gallery li {
+    list-style: none;
+    height: 7vw;
+    flex-grow: 1;
+
+}
+
+#gallery img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    
+  }
+
+#gallery li:last-child {
+    flex-grow: 10;
+}
+
+#gallery img:hover {
+
+    
+    transform: scale(1.05);
+    z-index: 20;
+
+}
+
+#screenshot { 
+
+    animation: fade-in 0.06s cubic-bezier(0.11, 0, 0.5, 0);
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 6;
+
+    display: none;
+    position: fixed;
+    padding: 2%;
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 100vh;
+
+    background-color: #080808c0;
+    backdrop-filter: blur(4px);
+
+}
+.spacer {
+
+    background-color: #ff00aa;
+    margin-top: 10%;
+    width: 100%;
+    height: 0.2vw;
+
+    border-radius: 1vw;
+
+} 
+
+#screenshotimg {
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('20220630082604_1.jpg');
+    width: 80%;
+    height: 44vw;
+
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+@keyframes fade-in {
+
+    0% {
+
+        opacity: 0%;
+
+    }
+
+    100% {
+
+        opacity: 100%;
+
+    }
+
+}
+
+

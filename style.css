@@ -1,0 +1,312 @@
+* {
+
+    text-shadow: 1px 1px #636363;
+
+}
+
+body {
+
+    background-color: black;
+    padding-top: 12%;
+    padding-left: 2%;
+
+    font-family: Verdana, sans-serif;
+
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#logo {
+
+    position: relative;
+    background-image: url("stronalogo.png");
+    background-size: cover;
+    width: 20cm;
+    height: 5cm;
+    margin: 20px;
+
+}
+
+#buttons {
+
+    position: relative;
+    
+    width: 10cm;
+    height: 7cm;
+    margin-left: 20px;
+
+}
+
+ul {
+
+    font-size: 175%;
+    list-style: none;
+    font-weight: 400;
+}
+
+ul li {
+
+    margin-top: 4%;
+
+}
+
+#buttons a {
+
+    text-decoration: none;
+    color: white;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+#buttons a:hover {
+
+    color: lightgray;
+
+
+}
+
+#popup {
+
+    background-color: gray;
+    position: fixed;
+    width: 40%;
+    height: 10cm;
+
+    top: 32%;
+    left: 30%;
+    right: 30%;
+
+    border-radius: 10px;
+
+    display: none;
+
+    opacity: 0.95;
+
+    animation-name: fadein;
+    animation-duration: 0.05s;
+
+}
+
+#top {
+
+    background-color: #767676;
+    clear: both;
+    width: 100%;
+    height: 1cm;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 2%;
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: white;
+}
+
+#mapslist {
+
+    background-color: gray;
+    clear: both;
+    width: 100%;
+    height: 8cm;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;    
+    
+    scrollbar-color: #BABABA white;
+    scrollbar-width: wide;
+
+    color: white;
+
+}
+
+#mapslist a {
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+#popupbuttons1 {
+
+    background-color: #767676;
+    float: left;
+    width: 60%;
+    height: 1cm;
+    border-radius: 0px 0px 0px 10px;
+
+    padding: 1.5%;
+    padding-left: 4%;
+    box-sizing: border-box;
+
+}
+
+#popupbuttons2 {
+
+    background-color: #767676;
+    float: left;
+    width: 40%;
+    height: 1cm;
+
+    border-radius: 0px 0px 10px 0px;
+
+    padding: 1.5%;
+    padding-left: 32%;
+    box-sizing: border-box;
+
+}
+
+.mapexample {
+
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #767676;
+    height: 80%;
+    width: 375px;
+    float: left;
+    margin: 2px;
+
+}
+
+.mapexample:hover {
+
+    background-color: #BABABA;
+
+}
+
+.mapexample img {
+
+width: 100%;
+height: 100%;
+
+}
+
+#mapslist table {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+button {
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: 1px 1px 0px 1px #424242, -1px -1px 0px 1px #BABABA;
+    background-color: #787877;
+    color: white;
+
+    float: left;
+
+}
+
+#popup2 {
+
+    background-color: gray;
+    position: fixed;
+    width: 20%;
+    height: 15cm;
+
+    top: 20%;
+    left: 40%;
+    right: 40%;
+
+    border-radius: 10px;
+
+    display: none;
+
+    opacity: 0.95;
+
+    animation-name: fadein;
+    animation-duration: 0.05s;
+
+}
+
+#popup4 {
+
+    position: fixed;
+    width: 30%;
+    height: 5.5cm;
+
+    top: 32%;
+    left: 35%;
+    right: 35%;
+
+    border-radius: 10px;
+
+    display: none;
+
+    opacity: 0.95;
+
+    animation-name: fadein;
+    animation-duration: 0.05s;
+
+}
+
+#popup4content {
+
+    background-color: gray;
+    color: white;
+    /* text-shadow: 1px 1px #424242; */
+    font-size: 110%;
+    width: 100%;
+    height: 100%;
+    
+    padding: 2px 20px 2px 20px;
+    box-sizing: border-box;
+
+}
+
+.cbutton {
+
+    box-sizing: border-box;
+    padding: 4px;
+
+}
+
+.cbutton:hover {
+
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(186,186,186,0.8) 100%);
+    border-radius: 6px;
+
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    0%  {opacity: 0;}
+    10%  {opacity: 0.1;}
+    20%  {opacity: 0.2;}
+    30%  {opacity: 0.3;}
+    40%  {opacity: 0.4;}
+    50%  {opacity: 0.5;}
+    60%  {opacity: 0.6;}
+    70%  {opacity: 0.7;}
+    80%  {opacity: 0.8;}
+    90%  {opacity: 0.95;}
+}

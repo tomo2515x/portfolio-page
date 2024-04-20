@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cut Content</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='style2cc.css'>
+    <script type="text/javascript" src="mapsites/overscript.js"></script>
+    <link rel="icon" href="maplogos/sitelogo.ico">
+
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos >= currentScrollPos) {
+                document.getElementById("menubar").style.top = "0";
+            } else {
+                document.getElementById("menubar").style.top = "-5vw";
+            }
+        prevScrollpos = currentScrollPos;
+        } 
+    </script>
+
+
+</head>
+<body style="background-image: url('mapsites/mapbg/20220630082604_1.jpg');">
+
+<div onclick="showgallery(0)" id="screenshot">
+ 
+    <div id="screenshotimg">
+        <!-- <div id="screenshotbar">
+            <div class="screenshotbuttons"><a class="noselect">&#10006;</a></div>
+            <div class="screenshotbuttons screenshotbuttons1"><a class="noselect" style="transform: rotate(90deg);">&#10142;</a></div>
+        </div> -->
+    </div>
+    <div class="noselect" style="font-size: 1vw;">X OR ESC TO EXIT</div>
+</div>
+
+<div id="menubar">
+    <div id="menulogo" style="background-repeat: no-repeat; background-size: contain;"></div>
+    <div id="menudivider"></div>
+    <a href="index.html"><div class="menuel1"><p class="menutext">Main Menu</p></div></a>
+    <a href="#"><div class="menuel1"><p class="menutext">About Me</p></div></a>
+    <a href="#"><div class="menuel1"><p class="menutext">???</p></div></a>
+    <a href="#"><div class="menuel1"><p class="menutext">Contact</p></div></a>
+</div>
+
+<div id="desc1">
+        <div id="welcometext">
+            <a class="noselect"><p>Hi! Welcome to my cut content page!</p></a>
+            I created this page because I love cut content and I want to share some <br>cut content from my creations!
+        </div>
+        <div id="desctext">
+
+            <div class="cutcontentarticle" onmouseover="changeBackground('mapsites/mapbg/de_ranger_r098.png')">
+
+                <div class="mapname"><div class="backdropblur">RANGER (WINGMAN)</div></div>
+
+                <a class="noselect" style="padding-right: 20%; box-sizing: border-box;">
+                    <br>
+                    <p class="sect">-BACKSTORY-</p>
+
+                    ranger was blah blahblah blahblah blahblah blahblah blah
+                    blah blah blah blah blah blah blah blah blah blahblah blahblah blah
+                    blah blahblah blahblah blahblah blahblah blahblah blah<br><br>
+                    
+                    Ranger had a rather complicated development cycle, it started out as me trying to make something
+                    look as good as I can, I think I kinda succeded. Many things were changed/tweaked over time. <br>
+                    For some time I even posted weekly progress on the map. I think it was fun, WiP thread on gamebanana 
+                    even got to the front page which was a huge shock for me and it literally made my year, I felt better in 2020
+                    because of it. <br>
+
+                    <br><br>
+                    
+                    <p class="sect">-WIP-</p>
+
+                    Many building designs were created and changed during development
+                    
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/EOCsgOmWsAElbTa?format=jpg&name=large" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://steamuserimages-a.akamaihd.net/ugc/1922499986459728183/CF689DCC7E9B0F54D186AB50268E432EA96A6F69/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=false" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://steamuserimages-a.akamaihd.net/ugc/1922499986459728322/C006DC048B15E496D999CEB0E1397DDBACAC7AD5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=false" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://steamuserimages-a.akamaihd.net/ugc/1922499986459728295/F3E962452C030AFCC85403AC5E233351458C0F04/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=false" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://steamuserimages-a.akamaihd.net/ugc/1922499986459728223/923611BF2431778EDE569C3AFF4DA5EBE6D3F546/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=#000000&letterbox=false" alt=""></li>
+                        </ul>
+                    </div>
+
+                    And here's few in-development screenshots!
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/EDD7Q9PXUAMnPIE?format=jpg&name=large" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/EDz0cxHWkAApIk_?format=jpg&name=large" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/EHlYPNRX0AAHs6V?format=png&name=small" alt=""></li>
+                        </ul>
+                    </div>
+
+
+                    Of course there are many placeholder textures, buildings and outdated promo material too, from what I remember and what I could find its
+
+                    <br><br><br>
+
+                    <p class="sect">-CUT CONTENT-</p>
+
+                    Dynamic light with "volumetric" (and that's a huge reach) effect was first intended to be used on ranger,
+                    I later scrapped it and used that "volumetric" lighting on Traincrash 2 <br><br>
+                    That was at the very beginning of Ranger's development. Since then there were many 
+                    and I mean MANY sudden changes in direction, style and even the entire idea of what the map should be.
+                    <br>
+                    As I mentioned above, this map started out as a test and many things from that "test era" are either lost to time 
+                    or lost to my hard drive. <br><br>
+                    Here's remaining images of things from this era which aren't present in the final map:
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/ESaibdiVAAcZ6yl?format=jpg&name=4096x4096" alt=""></li>
+                        
+                        </ul>
+                    </div>
+
+                    Last thing I want to talk about is Ranger Xfinity<br>
+                    It was supposed to be like 3kliksphilip's sparity infinity where the map has no clips and is set at night
+                    Later I also tried to mirror the entire map and that's where it all fell apart and after a short break from
+                    mapmaking I quit this project altogether.
+                    <br>
+                    Here's the first and last screenshot of it I've ever posted online
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/EN2qW6NXsAUAMPL?format=jpg&name=4096x4096" alt=""></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                <div class="spacer" style="background-color: #FFBA77;"></div>
+                </a>
+            </div>
+
+            <div class="cutcontentarticle" onmouseover="changeBackground('https://cdn.discordapp.com/attachments/375715311296446464/1071130383221014548/image.png')">
+            
+                <div class="mapname" style="background-image: url(https://cdn.discordapp.com/attachments/375715311296446464/1071130383221014548/image.png);"><div class="backdropblur">TOXIC</div></div>
+                <a class="noselect" style="padding-right: 20%; box-sizing: border-box;">
+                    <br>
+                    <p class="sect" style="background-image: linear-gradient(90deg,#ff2f2faa, #00000000);">-BACKSTORY-</p>
+
+                    Toxic was my 5v5 map heavily (and I mean it) inspired by cache, It was my first attempt at 
+                    Nuke's artstyle<br><br>
+                    It was cancelled around June 2018
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://cdn.discordapp.com/attachments/375715311296446464/1071129945197256845/obraz.png" alt=""></li>
+                          
+                        </ul>
+                    </div>
+        
+                    <div class="spacer" style="background-color: #ff2f2f"></div>
+                </a>
+            </div>
+
+            <div class="cutcontentarticle" onmouseover="changeBackground('https://cdn.discordapp.com/attachments/375715311296446464/1071131005303406685/Zrzut_ekranu_517.png')">
+            
+                <div class="mapname" style="background-image: url(https://cdn.discordapp.com/attachments/375715311296446464/1071131005303406685/Zrzut_ekranu_517.png);"><div class="backdropblur">REINFORCEMENT</div></div>
+                <a class="noselect" style="padding-right: 20%; box-sizing: border-box;">
+                    <br>
+                    <p class="sect" style="background-image: linear-gradient(90deg,#B79593aa, #00000000);">-BACKSTORY-</p>
+
+                    Reinforcement was a map me and my friend worked on for a long time, we eventually grew tired of it,
+                    that plus the fact we couldn't playtest it often contributed to its eventual cancellation <br><br>
+                    It was cancelled around November 2018
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://cdn.discordapp.com/attachments/375715311296446464/1071131004716187648/Zrzut_ekranu_515.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://cdn.discordapp.com/attachments/375715311296446464/1071131005303406685/Zrzut_ekranu_517.png" alt=""></li>
+                          
+                        </ul>
+                    </div>
+        
+                    <div class="spacer" style="background-color: #B79593"></div>
+                </a>
+            </div>
+
+            <div class="cutcontentarticle" onmouseover="changeBackground('cutcontent/ct4w.jpg')">
+            
+                <div class="mapname" style="background-image: url(cutcontent/ct4w.jpg);"><div class="backdropblur">WORKS: BANDIT COUNTRY</div></div>
+                <a class="noselect" style="padding-right: 20%; box-sizing: border-box;">
+                    <br>
+                    <p class="sect" style="background-image: linear-gradient(90deg,#c0c0c0aa, #00000000);">-BACKSTORY-</p>
+
+                        Works: Bandit Country was supposed to be a 5v5 sequel to my wingman map "Works". Aesthetically it 
+                        was inspired by Kanye West's unreleased album "God's Country" and later chapters of VR video game "Boneworks".
+                        <br><br>
+                        I've created a lot of promotional assets and a basic layout for the map
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="cutcontent/ct4w.jpg" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://cdn.discordapp.com/attachments/375715311296446464/1071131005303406685/Zrzut_ekranu_517.png" alt=""></li>
+                          
+                        </ul>
+                    </div>
+        
+                    <div class="spacer" style="background-color: #c0c0c0"></div>
+                </a>
+            </div>
+
+            <!-- <div class="cutcontentarticle" onmouseover="changeBackground('mapbg/20200926135823_1.jpg')">
+
+                <div class="mapname" style="background-image: url(mapbg/20200926135823_1.jpg);"><div class="backdropblur">RECOVERY (WINGMAN)</div></div>
+
+                <a class="noselect" style="padding-right: 20%; box-sizing: border-box;">
+                    Recovery was my mapcore 2020 wingman contest entry, honestly I didn't have high or even any hopes but
+                    honestly it turned out quite well, and despite rather short development it has a fair share of unused content!
+                    <br><br>
+                    Here's some of unused textures I was able to dig up
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="" alt=""></li>
+                        </ul>
+                    </div>
+
+                    Layout evolved pretty fast, I don't think I have any massive layout diffrences saved 
+                    There is an entire unrelease update for recovery, I decided to not release it mainly because I didn't
+                    get any solid feedback, I was simply too scared to break the map.
+                    <br><br>
+                    Few screenshots from said update + radar image
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="" alt=""></li>
+                        </ul>
+                    </div>
+
+                    And here's few in-development screenshots!
+
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/Ef5nTbdWoAEOe2a?format=jpg&name=large" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://pbs.twimg.com/media/Ef5nVYcWAAAp8kB?format=jpg&name=large" alt=""></li>
+                        </ul>
+                    </div>
+
+
+
+
+                <div class="spacer" style="background-color: #59837e;"></div>
+                </a>
+            </div> -->
+
+            <!-- <div class="cutcontentarticle" onmouseover="changeBackground('mapbg/20210122000100_1.jpg')">
+
+                <div class="mapname" style="background-image: url(mapbg/20210122000100_1.jpg);"><div class="backdropblur">GRADUATION (WINGMAN)</div></div>
+
+                <a class="noselect" style="padding-right: 20%; box-sizing: border-box;">
+                    
+                    <p class="sect" style="background-image: linear-gradient(90deg,#F2059Faa, #00000000);">-BACKSTORY-</p>
+
+                    Graduation was a fun one, entire concept was prototyped at the same time as works, recovery and marsh, idea for all these
+                    all these maps were in development at almost the same time in fact, recovery just took priority because of the contest.
+                    <br><br>
+
+                    <p class="sect" style="background-image: linear-gradient(90deg,#F2059Faa, #00000000);">-WIP-</p>
+
+                    Graduation has the least cut content out of all maps, old layout is the only notable thing. <br><br>
+                    Here's some things I was able to dig up, few unused textures, first version of current layout and grass test.
+                    
+                    <p class="sect" style="background-image: linear-gradient(90deg,#F2059Faa, #00000000);">-CUT CONTENT-</p>
+                    
+                    Grass on graduation is actually reused grass from my other, as of now cancelled map "Marsh".
+                    <div id="gallery">
+                        <ul>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/p97RCSD.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/RYxF70h.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/eDgqtRx.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/ZQSQJD8.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/iz392dD.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/1HIaOe0.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/0aL0pSc.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/M0KH8n5.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/A2GYiSa.png" alt=""></li>
+                            <li><img onclick="showgallery(this)" src="https://i.imgur.com/PSNuYq7.jpg" alt=""></li>
+
+
+                        </ul>
+                    </div>
+
+                   
+
+                <div class="spacer" style="background-color: #F2059F;"></div>
+                </a>
+            </div> -->
+
+           
+
+            <div id="footer"><a class="noselect">SITE BY ME | 2023</a></div>
+        </div>
+
+        
+        <!-- <div id="steam1">
+            <a href="#"><div class="sidebutton" id="steamlink" style="background-image: url(https://media.tenor.com/oqv1lX_NwxcAAAAd/neco-arc-tsukihime.gif); margin-top: 0;"></div></a>
+            <a class="noselect"><div class="sidespacer"></div></a>
+            <a href="qalea.html"><div class="sidebutton" style="background-image: url('mapicons/qaleaicon2.jpg');"></div></a>
+            <a href="graduation.html"><div class="sidebutton" style="background-image: url('mapicons/gradicon2.jpg');"></div></a>
+            <a href="recovery.html"><div class="sidebutton" style="background-image: url('mapicons/rcvicon2.jpg');"></div></a>
+            <a href="works.html"><div class="sidebutton" style="background-image: url('mapicons/wrksicon2.jpg');"></div></a>
+            <a href="ranger.html"><div class="sidebutton" style="background-image: url('mapicons/rngricon2.jpg');"></div></a>
+            <a href="isle.html"><div class="sidebutton" style="background-image: url('mapicons/isleicon2.jpg');"></div></a>
+
+
+        </div> -->
+        
+        
+    </div>
+</div>
+
+
+
+</body>
+</html>
